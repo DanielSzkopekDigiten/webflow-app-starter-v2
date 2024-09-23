@@ -6,7 +6,8 @@ import path from "path";
 import url from "url";
 
 // Load environment variables from .env file
-const { WEBFLOW_CLIENT_ID, WEBFLOW_SECRET, SERVER_HOST, PORT } = process.env;
+//const { WEBFLOW_CLIENT_ID, WEBFLOW_SECRET, SERVER_HOST, PORT } = process.env;
+const { WEBFLOW_CLIENT_ID, WEBFLOW_SECRET, SERVER_HOST, PORT } = {client: '45d61566bacc0731afab494c89e02c063a286a15bd2d5fb371646dc24463ec1f', secret:  'a7f04bfa679e9a268805efcf80509f5eb69a5342dda9239ace0bc9ec9ebf0df0', host: 'https://88f9-79-188-78-79.ngrok-free.app', port: 3000};
 
 // Create a new Webflow App instance
 const app = new App(WEBFLOW_CLIENT_ID, WEBFLOW_SECRET);
@@ -88,6 +89,6 @@ server.get("/sites", async (req, reply) => {
   return sites;
 });
 
-server.listen({ port: PORT, host: "localhost" }, (err) => {
+server.listen({ port: 3000, host: "localhost" }, (err) => {
   if (err) throw err;
 });

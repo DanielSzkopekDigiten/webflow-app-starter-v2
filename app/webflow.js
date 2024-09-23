@@ -17,8 +17,8 @@ class App {
     // OAuth options
     this.oauth = new AuthorizationCode({
       client: {
-        id: clientId,
-        secret: clientSecret,
+        id: '45d61566bacc0731afab494c89e02c063a286a15bd2d5fb371646dc24463ec1f',
+        secret: 'a7f04bfa679e9a268805efcf80509f5eb69a5342dda9239ace0bc9ec9ebf0df0',
       },
       options: {
         bodyFormat: "json",
@@ -56,7 +56,7 @@ class App {
   /**
    * Create Webhooks for all sites available
    *
-   * @param {string} triggerType The webhook trigger type to listen for
+   * @param {string} triggerType The webhook trigger type to listen forÏ
    * @param {string} url The url to send the webhook events to
    * @param {string} token The access token to use for creating the webhooks
    *
